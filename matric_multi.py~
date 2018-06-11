@@ -1,0 +1,23 @@
+n,m=map(int,input("enter matric dimension m n:").lower().split())
+def show(X):
+    for var in X:
+        s='{:10)}'*len(var)
+        print('\t',s.format(*var)
+            '
+
+
+print("matric A:")
+A=[list(map(int,input('\t').split())) for var in range(n) ]
+print("matric B:")
+B=[list(map(int,input('\t').split())) for var in range(n) ]
+print("Matric A is:")
+show(A)
+print("Matric B is:")
+show(B)
+
+
+
+
+
+
+        

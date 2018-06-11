@@ -1,0 +1,27 @@
+while True:
+    from random import randint
+    comGuess=randint(1,50)
+    while True:
+        userGuess=int(input("enter a number(1-50)"))
+        if userGuess>=1 and comGuess<=50:
+            if userGuess > comGuess:
+                print("think lower")
+            elif userGuess < comGuess:
+                print("think big")
+            else:
+                print("yeah your guess is correct")
+                break
+        else:
+            print("worng chosses")
+            print("chosses from 1 to 50")
+    ch =input(" do you want to play again ? y/n:").strip()
+    ch = ch.lower()
+    if ch=='y' or ch== "yes":
+        continue
+    else:
+        break
+
+
+    
+    
+

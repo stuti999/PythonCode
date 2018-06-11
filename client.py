@@ -1,0 +1,18 @@
+import socket
+s=socket.socket()
+server="192.168.209.1"
+port=1234
+s.connect((server,port))
+print("connection from server")
+fi=input("enter a valid file path")
+while True:
+    msg=recv(1024).decode()
+    print(msg)
+    f=open("a:\\go2.txt","a")
+    f.write(msg)
+    if msg=="":
+        print("no connection")
+        f.close()
+        s.close()
+
+
